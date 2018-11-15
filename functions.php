@@ -16,6 +16,6 @@ if ( ! defined( 'ABSPATH' ) ) exit;
  * Comment out the block below if you don't have additional CSS on style.css.
  */
 function suki_child_enqueue_styles() {
-	wp_enqueue_style( 'suki-child', get_stylesheet_directory_uri() . '/style.css', array( 'suki' ), wp_get_theme()->get( 'Version' ) );
+	wp_enqueue_style( 'suki-child', trailingslashit( get_stylesheet_directory_uri() ) . 'style.css', array( 'suki' ), wp_get_theme()->get( 'Version' ) );
 }
 add_action( 'wp_enqueue_scripts', 'suki_child_enqueue_styles', 20 );
