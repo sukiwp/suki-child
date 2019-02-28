@@ -15,6 +15,8 @@ if ( ! defined( 'ABSPATH' ) ) exit;
  * It's because WordPress treats Parent Theme configuration and Child Theme configuration as separate data.
  *
  * Set the constant to `true` to make this Child Theme inherit Parent Theme configuration data.
+ *
+ * Only available on Suki v1.0.0 or later version.
  */
 define( 'SUKI_CHILD_USE_PARENT_MODS', false );
 
