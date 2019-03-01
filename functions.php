@@ -18,7 +18,9 @@ if ( ! defined( 'ABSPATH' ) ) exit;
  *
  * Only available on Suki v1.0.0 or later version.
  */
-define( 'SUKI_CHILD_USE_PARENT_MODS', false );
+if ( ! defined( 'SUKI_CHILD_USE_PARENT_MODS' ) ) {
+	define( 'SUKI_CHILD_USE_PARENT_MODS', false );
+}
 
 /**
  * Enqueue Child Theme CSS.
